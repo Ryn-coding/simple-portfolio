@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="index.css">
+    <title>Aryan-Portfolio 1.0</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="right">
+                Aryan's Portfolio
+            </div>
+            <div class="left">
+                <ul>
+                    <li><a class="nav-link" href="#">Home</a></li>
+                    <li><a class="nav-link" href="#">About</a></li>
+                    <li><a class="nav-link" href="#">Projects</a></li>
+                    <li><a class="nav-link" href="#">Contact me</a></li>
+                    <li><i class="ri-menu-fill"></i></li>
+                </ul>
+            </div>
+        </nav>
+
+    </header>
+    <!-- Main Content -->
+    <main>
+        <section class="first">
+            <div class="fleft">
+                <div>Hello, Myself</div>
+                <span class="meta">Aryan Vaghela.</span><br>
+                <div>I am a</div>
+                <span id="meta">Full stack Web Developer.</span>
+            </div>
+            <div class="rleft">
+                <img src="images/bg.png" alt="">
+            </div>
+        </section>
+        <hr>
+        <section class="second">
+            <span class="exp">What I have done Earlier</span>
+            <h1>Past Experiance</h1>
+        </section>
+    </main>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#meta', {
+            strings: ['Full Stack Web Developer.', 'PHP Web Developer.', 'EC Engineer.'],
+            typeSpeed: 70,
+            loop: true
+        });
+    </script>
+    <footer>
+        <div class="footer">
+            <div class="logo">
+                LOGO
+            </div>
+            <div class="visit">
+                <li><a href="">Home</a></li>
+                <li><a href="">Support</a></li>
+                <li><a href="">Contact Me</a></li>
+            </div>
+            <div class="support">
+                <li><a href="">Home</a></li>
+                <li><a href="">Support</a></li>
+                <li><a href="">Contact Me</a></li>
+            </div>
+        </div>
+        <div class="copyright">Copyright <i class="ri-copyright-line"></i> www.aryanporfolio.com</div>
+    </footer>
+</body>
+
+</html>
