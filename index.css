@@ -1,17 +1,26 @@
-* { margin: 0; padding: 0; color: white; font-family: 'Poppins', sans-serif; }
-body { background-color: rgb(0, 45, 36); }
+* {
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: rgb(0, 45, 36);
+}
 
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 80px;
+    height: 12vh;
     background-color: rgb(204, 253, 235);
 }
 
-div.left{
-    margin-right: 50px;
+div.left {
+    margin-right: 3vw;
 }
+
 div.left ul {
     display: flex;
     justify-content: center;
@@ -19,12 +28,12 @@ div.left ul {
 
 div.left ul li {
     list-style: none;
-    margin: 0 25px;
+    margin: 0 2vw;
     font-size: 20px;
     font-weight: 600;
 }
 
-div.left ul li i{
+div.left ul li i {
     color: rgb(80, 80, 80);
     align-items: center;
     display: none;
@@ -37,34 +46,40 @@ div.left ul li a {
 }
 
 div.right {
-    font-size: 30px;
+    font-size: 35px;
     color: rgb(0, 0, 0);
-    margin-left: 2.5em;
+    margin-left: 4vw;
     font-weight: 700;
 }
 
 .first {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
-    margin: 23px 50px;
+    height: 40em;
+    margin: 5vh 5vw;
+    position: relative;
+    top: 0;
 }
 
 .fleft {
-    width: 50%;
-    font-size: 2.9em;
+    width: 30vw;
+    height: 40vh;
+    font-size: 2vw;
     margin: 45px 0;
 }
 
 .rleft {
+    width: 40vw;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .rleft img {
-    width: 40vw;
-    margin: 50px 50px;
+    width: 100%;
+    height: 100%;
+    margin: 0vh 5vw;
 }
 
 .fleft span.meta {
@@ -118,6 +133,7 @@ main hr {
 }
 
 .second span.exp {
+    text-transform: capitalize;
     font-size: 15px;
     color: gray;
 }
@@ -128,30 +144,124 @@ main hr {
     width: 100%;
     background-color: rgb(0, 0, 0);
 }
-footer{
-    padding: 5px 0;
-        background-color: rgb(0, 0, 0);
 
-}
-.footer{
-    height: 200px;
+.second ul {
+    margin: 20px 0;
     display: flex;
     justify-content: space-between;
-    padding: 15px 20px;
 }
 
-.footer div{
-    margin: 50px;
+.second ul li::before {
+    content: "";
+    background-color: #ffe48b;
+    display: flex;
+    position: relative;
+    left: 150px;
+    height: 100px;
+    width: 1px;
 }
 
-.footer li{
+.second ul::before {
+    content: "";
+    background-color: #ffe48b;
+    position: absolute;
+    display: block;
+    height: 0.5px;
+    width: 66.5%;
+}
+
+.second ul li {
     list-style: none;
-
+    width: 30%;
+    font-size: 20px;
 }
-footer div.copyright{
+
+.second ul li span {
+    color: gray;
+    font-style: italic;
+    font-size: 16px;
+}
+
+.second ul li h3 {
+    margin-bottom: 10px;
+}
+
+.second ul li h3 span {
+    color: #ffe48b;
+}
+
+footer {
+    background-color: rgb(0, 0, 0);
+    height: 50%;
+}
+
+footer .copyright{
+    background-color: #2c2c2c;
+    color: #fff;
     text-align: center;
 }
+.footer{
+    display: flex;
+    justify-content: space-between;
+}
 
-@media (max-width=400px) {
-    
+.footer .logo{
+    padding: 50px 40px;
+       display: flex;
+    align-items: center;
+}
+
+footer .visit{
+    padding: 20px 100px;
+    margin-right: 150px;
+}
+.visit ul li{
+    list-style: none;
+    font-size: 16px;
+    margin: 5px 0;
+}
+.visit ul li a{
+    text-decoration: none;
+    margin: 5px 0px;
+}
+@media (max-width:419px) {
+    .first {
+        flex-direction: column;
+        width: 100%;
+    }
+
+}
+
+/* HTML: <div class="loader"></div> */
+.loader {
+  width: 40px;
+  aspect-ratio: 1;
+  display: flex;
+  transform-origin: 0% 150%;
+  animation: l20-0 2s infinite linear;
+}
+.loader:before,
+.loader:after {
+  content: "";
+  flex: 1;
+  background: #f03355;
+  animation: l20-1 1s infinite linear alternate;
+  border-radius: 100px 0 0 100px;
+  transform-origin: 100% 100%;
+}
+.loader:after {
+  border-radius: 0 100px 100px 0;
+  transform-origin: 0% 100%;
+  --s:-1;
+}
+@keyframes l20-0 {
+   0%,10%   {transform:translateY(0)     scaleY(1)}
+   49.99%   {transform:translateY(-100%) scaleY(1)}
+   50%      {transform:translateY(-100%) scaleY(-1)}
+   90%,100% {transform:translateY(-200%) scaleY(-1)}
+}
+@keyframes l20-1 {
+   0%,20%  {transform:rotate(0deg)                    translate(0,0)     rotate(0deg)}
+   50%     {transform:rotate(calc(var(--s,1)*-90deg)) translate(0,0)     rotate(0deg)}
+   100%    {transform:rotate(calc(var(--s,1)*-90deg)) translate(0,-20px) rotate(calc(var(--s,1)*-90deg))}
 }
