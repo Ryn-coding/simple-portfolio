@@ -3,9 +3,6 @@
     padding: 0;
     color: white;
     font-family: 'Poppins', sans-serif;
-}
-
-html{
     scroll-behavior: smooth;
 }
 
@@ -14,21 +11,68 @@ body {
 }
 
 nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 80px;
-    width: 100%;
+    height: 90px;
+    width: auto;
     background-color: rgb(204, 253, 235);
 }
 
+nav>div {
+    display: inline-block;
+}
+
+.nav-link {
+    font-size: 1.1rem;
+    letter-spacing: 0.05rem;
+    position: relative;
+}
+
+.nav-link::before {
+    content: "";
+    background: rgb(0, 45, 36);
+    width: 100%;
+    height: 0.05rem;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.3s;
+}
+
+.nav-link:hover::before {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.nav-link:hover {
+    color: rgb(0 45 36);
+}
+
+div.right {
+    font-size: 30px;
+    color: rgb(0, 0, 0);
+    margin: 23px 20px;
+    padding: 0 10px;
+    font-weight: 700;
+}
+
 div.left {
-    margin-right: 3vw;
+    margin-left: 38vw;
+}
+
+div.left button {
+    background: chocolate;
+    border: none;
+    border-radius: 23px;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
 }
 
 div.left ul {
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 div.left ul li {
@@ -50,12 +94,6 @@ div.left ul li a {
     transition: 0.3s ease-in-out;
 }
 
-div.right {
-    font-size: 35px;
-    color: rgb(0, 0, 0);
-    margin-left: 4vw;
-    font-weight: 700;
-}
 
 .first {
     display: flex;
@@ -102,6 +140,11 @@ div.right {
     margin: auto;
 }
 
+.second h1 {
+    font-size: 2.5em;
+    color: #ffe48b;
+}
+
 main hr {
     border: 1px;
     background: #ccfdeb45;
@@ -109,33 +152,6 @@ main hr {
     margin: 40px 65px;
 }
 
-.nav-link {
-    font-size: 1.1rem;
-    letter-spacing: 0.05rem;
-    position: relative;
-}
-
-.nav-link::before {
-    content: "";
-    background: rgb(0, 45, 36);
-    width: 100%;
-    height: 0.05rem;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    transform: scaleX(0);
-    transform-origin: bottom right;
-    transition: transform 0.3s;
-}
-
-.nav-link:hover::before {
-    transform: scaleX(1);
-    transform-origin: bottom left;
-}
-
-.nav-link:hover {
-    color: rgb(0 45 36);
-}
 
 .second span.exp {
     text-transform: capitalize;
@@ -197,7 +213,7 @@ main hr {
 
 footer {
     background-color: rgb(0 0 0 / 15%);
-    height: 50%;
+    height: 250px;
 }
 
 footer .copyright {
@@ -208,6 +224,7 @@ footer .copyright {
 
 .footer {
     display: flex;
+    height: 100%;
 }
 
 .footer .logo {
@@ -217,7 +234,8 @@ footer .copyright {
 }
 
 footer .visit {
-    padding: 10px 125px;
+    padding: 20px 50px;
+    margin: 20px 20px;
     display: flex;
 }
 
@@ -232,6 +250,41 @@ footer .visit {
     margin: 5px 0px;
 }
 
+
+.newsletter {
+  padding: 20px 50px;
+    margin: 20px 20px;
+}
+
+.newsletter label {
+    color: white;
+    margin: 20px 0;
+}
+
+.newsletter input[type=text] {
+    background: black;
+    border: 1px solid black;
+    border-radius: 4px;
+    padding: 10px 12px;
+        margin-top: 10px;
+    width: 100%;
+}
+
+.newsletter input[type=submit] {
+    background-color: chocolate;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.newsletter input[type=submit]:hover{
+    background-color: rgba(210, 105, 30, 0.819);
+}
 @media (max-width:419px) {
     .first {
         flex-direction: column;
