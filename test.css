@@ -1,0 +1,410 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: white;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: rgb(0, 45, 36);
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+}
+
+header {
+    width: 100%;
+}
+
+header nav {
+    height: 115px;
+    width: 100%;
+    background-color: rgb(204, 253, 235);
+    position: fixed;
+    z-index: 11;
+}
+
+nav .right {
+    display: block;
+    color: #000;
+    font-size: 2vw;
+    font-weight: 700;
+    text-align: center;
+    padding: 35px 30px;
+    float: left;
+}
+
+nav .left {
+    padding: 38px 30px;
+    font-size: 1.3em;
+    color: #000;
+}
+
+nav .left ul {
+    display: flex;
+    justify-content: end;
+    gap: 80px;
+    align-items: center;
+    list-style: none;
+}
+
+nav .left .nav-link {
+    color: rgb(0 45 36 / 70%);
+    text-decoration: none;
+    font-weight: 500;
+    position: relative;
+}
+
+nav .left .nav-link::before {
+    content: "";
+    background: rgb(0, 45, 36);
+    width: 100%;
+    height: .5px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.3s;
+}
+
+nav .left .nav-link:hover::before {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+nav .left .nav-link:hover {
+    color: rgb(0 45 36);
+}
+
+nav .left button {
+    background: chocolate;
+    border: none;
+    border-radius: 23px;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+nav .left button:hover {
+    background-color: rgb(172, 72, 0);
+    transition: all .3s ease-in-out;
+}
+
+/* nav .left li:has(i) {
+    display: none;
+} */
+.left .dropdown {
+    display: none;
+}
+
+main .first {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 100vh;
+    padding: 7.5vw 5vw 0;
+}
+
+.first .fleft {
+    width: 30vw;
+    height: 40vh;
+    font-size: 2vw;
+}
+
+.first .fleft span.meta {
+    color: yellow;
+    font-weight: 600;
+}
+
+.first .fleft #meta {
+    color: yellow;
+    font-weight: 600;
+}
+
+.first .rleft {
+    width: 40vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 35px 0;
+}
+
+.first .rleft img {
+    width: 100%;
+}
+
+main hr {
+    border: 1px;
+    background: #ccfdeb45;
+    height: 1px;
+    margin: 40px 65px;
+}
+
+main .second {
+    position: relative;
+    width: 100%;
+    padding: 0 5vw;
+    margin-bottom: 60px;
+}
+
+.second h1 {
+    font-size: 2.5em;
+    color: #ffe48b;
+}
+
+.second span.exp {
+    text-transform: capitalize;
+    font-size: 15px;
+    color: gray;
+}
+
+.second ul {
+    margin: 20px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.second ul::before {
+    content: "";
+    background-color: #ffe48b;
+    position: absolute;
+    display: block;
+    height: 0.5px;
+    width: 63%;
+}
+
+.second ul li::before {
+    content: "";
+    background-color: #ffe48b;
+    display: flex;
+    position: relative;
+    height: 100px;
+    width: 1px;
+    margin-bottom: 10px;
+}
+
+.second ul li {
+    list-style: none;
+    width: 30%;
+    font-size: 20px;
+}
+
+.second ul li span {
+    color: gray;
+    font-style: italic;
+    font-size: 16px;
+}
+
+.second ul li h3 {
+    margin-bottom: 10px;
+}
+
+.second ul li h3 span {
+    color: #ffe48b;
+}
+
+footer {
+    height: 300px;
+    background-color: rgb(0 0 0 / 15%);
+}
+
+footer .footer-container {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    gap: 60px;
+}
+
+footer .copyright {
+    background-color: #131313;
+    text-align: center;
+}
+
+.footer-container .logo {
+    padding: 130px 40px;
+}
+
+.visit {
+    padding: 50px 40px 20px 20px;
+    text-wrap: nowrap;
+    letter-spacing: 1px;
+    line-height: 2;
+}
+
+.visit ul {
+    list-style: none;
+    font-size: 16px;
+}
+
+.visit ul li a {
+    text-decoration: none;
+}
+
+.subscribe {
+    padding: 50px 50px;
+}
+
+.newsletter {
+    height: 50%;
+}
+
+.newsletter label {
+    padding: 10px 100px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.newsletter input[type=text] {
+    background: black;
+    border: 1px solid black;
+    border-radius: 4px;
+    padding: 12px 12px;
+    margin-top: 10px;
+    width: 35em;
+}
+
+.newsletter button[type=submit] {
+    position: relative;
+    top: -52px;
+    left: 18.5em;
+    background-color: chocolate;
+    padding: 6px 10px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    font-size: 26px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.newsletter button[type=submit]:hover {
+    background-color: rgb(172, 72, 0);
+}
+
+.socials a {
+    padding: 0 5px;
+    text-decoration: none;
+}
+
+.socials a i {
+    font-size: 35px;
+    transition: all .3s ease;
+}
+
+.socials a#facebook i:hover {
+    color: #0866ff;
+}
+
+.socials a#instagram i:hover {
+    color: #c13584;
+}
+
+.socials a#linkedin i:hover {
+    color: #0A66C2;
+}
+
+.socials a#github i:hover {
+    color: #7e7e7e;
+}
+
+.contact-container {
+    position: relative;
+    min-height: 100vh;
+    padding: 7.5vw 5vw 0;
+}
+
+.cf {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 40vw 40vw;
+    align-items: center;
+}
+
+.cf .fsubject{
+   grid-column: 1 / 3;
+}
+
+@media (max-width:479px) {
+    nav .left ul li {
+        display: none;
+    }
+
+    nav .right {
+        font-size: 6.5vw;
+        padding: 39px 20px;
+    }
+
+    nav .left {
+        padding: 33px 0;
+        font-size: 1.3em;
+    }
+
+    .left .dropdown {
+        display: block;
+    }
+
+    .left .dropdown i {
+        font-size: 45px;
+        color: rgb(0, 45, 36);
+        padding-left: 80px;
+    }
+
+    main hr {
+        margin: 25px 20px;
+    }
+
+    main .first {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        padding: 100px 0 0 0;
+        margin: 0;
+    }
+
+    .first .fleft {
+        width: 80vw;
+        height: 30vh;
+        font-size: 6vw;
+        padding: 20px 0;
+    }
+
+    .first .rleft {
+        width: 80%;
+        padding: 0;
+    }
+
+    main .second {
+        width: 100%;
+        padding: 5vw 5vw;
+        margin: 0;
+    }
+
+    .second ul li {
+        list-style: none;
+        width: 30%;
+        font-size: 12px;
+    }
+
+    .second ul li h3 {
+        font-size: 16px;
+    }
+
+    .second ul li span {
+        color: gray;
+        font-style: italic;
+        /* font-size: 12px; */
+    }
+
+    .second h1 {
+        font-size: 2em;
+        padding-top: 10px;
+    }
+
+    .second ul li::before {
+        margin-bottom: 10px;
+    }
+}

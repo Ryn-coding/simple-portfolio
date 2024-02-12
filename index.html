@@ -9,7 +9,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet" />
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="test.css">
+    <!-- <link rel="stylesheet" href="index.css"> -->
+
     <title>Aryan-Portfolio 1.0</title>
 </head>
 
@@ -24,15 +26,24 @@
                     <li><a class="nav-link" href="#">Home</a></li>
                     <li><a class="nav-link" href="#about">About</a></li>
                     <li><a class="nav-link" href="#">Projects</a></li>
-                    <li><a href="#"><button>Contact me</button></a></li>
-                    <li><i class="ri-menu-fill"></i></li>
+                    <li><a href="contact.html"><button>Contact me</button></a></li>
+                    <!-- <li><i class="ri-menu-fill"></i></li> -->
                 </ul>
+                <div class="dropdown">
+                    <i class="ri-menu-fill"></i>
+                    <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
             </div>
         </nav>
 
     </header>
     <!-- Main Content -->
-    <main>
+    <main id="main-container">
         <section class="first">
             <div class="fleft">
                 <h1>Hello, Myself <span class="meta">Aryan Vaghela.</span></h1>
@@ -53,12 +64,12 @@
 
                 </li>
                 <li>
-                    <h3>Backend Web Development Intern <span>(PHP / WordPress)</span></h3>
+                    <h3>Web Developer Intern <span>(PHP / WordPress)</span></h3>
                     <span>At Albedous Infosystem Pvt. Ltd., Ahmedabad, Gujarat. (February 2023 - May 2023)</span>
 
                 </li>
                 <li>
-                    <h3>Frontend Web Development Intern <span>(React JS)</span></h3>
+                    <h3>Web Developer Intern <span>(React JS)</span></h3>
                     <span>At VNurture Technologies Pvt. Ltd., Ahmedabad, Gujarat. (July 2023 - August 2023)</span>
 
                 </li>
@@ -68,20 +79,25 @@
     </main>
 
     <footer>
-        <div class="footer">
+        <div class="footer-container">
             <div class="logo">
                 <h1>Portfolio</h1>
             </div>
             <div class="visit">
                 <ul>
+                    <li>
+                        <h2>Quick Links</h2>
+                    </li>
                     <li><a href="#">About Us</a></li>
-                    <li><a href="#">Support</a></li>
-                    <li><a href="#">Contact Me</a></li>
+                    <li><a href="#">Services</a></li>
+                    <!-- <li><a href="#">Contact Me</a></li> -->
+                    <li><a href="#">Privacy Policy</a></li>
                 </ul>
             </div>
             <div class="visit">
                 <ul>
-                    <li><span>123,  ABC Apartment,</span></li>
+                    <li><h2>Contact Us</h2></li>
+                    <li><span>123, ABC Apartment,</span></li>
                     <li><span>Gujarat, India.</span></li>
                     <li><a href="tel:0123456789">0123456789</a></li>
                     <li><a href="mailto:aryanvaghela53@gmail.com">aryanvaghela53@gmail.com</a></li>
@@ -93,8 +109,14 @@
                         <label for="email">Subscribe our Newsletter</label>
                         <input type="text" placeholder="Enter Your Email">
                     </div>
-                    <input type="submit">
+                    <button type="submit" class="btn"><i class="ri-send-plane-fill"></i></button>
                 </form>
+                <div class="socials">
+                    <a href="#" id="facebook"><i class="ri-facebook-circle-fill"></i></a>
+                    <a href="#" id="instagram"><i class="ri-instagram-line"></i></a>
+                    <a href="#" id="github"><i class="ri-github-fill"></i></a>
+                    <a href="#" id="linkedin"><i class="ri-linkedin-box-fill"></i></a>
+                </div>
             </div>
         </div>
         <div class="copyright">Copyright <i class="ri-copyright-line"></i> www.aryanporfolio.com</div>
@@ -108,6 +130,7 @@
             loop: true
         });
     </script>
+    <script src="index.js"></script>
 </body>
 
 </html>

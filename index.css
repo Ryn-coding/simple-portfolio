@@ -69,6 +69,11 @@ div.left button {
     cursor: pointer;
 }
 
+div.left button:hover{
+    background-color: rgb(172, 72, 0);
+    transition: all .3s ease-in-out;
+}
+
 div.left ul {
     display: flex;
     justify-content: center;
@@ -265,25 +270,27 @@ footer .visit {
     background: black;
     border: 1px solid black;
     border-radius: 4px;
-    padding: 10px 12px;
+    padding: 12px 12px;
         margin-top: 10px;
     width: 100%;
 }
 
-.newsletter input[type=submit] {
+.newsletter button[type=submit] {
+    position: relative;
+       top: -56px;
+    left: 18em;
     background-color: chocolate;
-    color: black;
-    padding: 10px 20px;
+    padding: 5px 10px;
     border: none;
     border-radius: 5px;
     margin-top: 10px;
-    font-size: 15px;
+    font-size: 24px;
     cursor: pointer;
     transition: all 0.3s;
 }
 
-.newsletter input[type=submit]:hover{
-    background-color: rgba(210, 105, 30, 0.819);
+.newsletter button[type=submit]:hover{
+    background-color: rgb(172, 72, 0);  
 }
 @media (max-width:419px) {
     .first {
