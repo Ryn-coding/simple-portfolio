@@ -305,7 +305,7 @@ footer .copyright {
     border-radius: 4px;
     padding: 12px 12px;
     margin-top: 10px;
-    width: 65vw;
+    width: 70vw;
 }
 
 .newsletter button[type=submit] {
@@ -494,7 +494,7 @@ footer .copyright {
 
     .newsletter button[type=submit] {
         top: -52px;
-        left: 70vw;
+        left: 75vw;
     }
 
     .newsletter {
