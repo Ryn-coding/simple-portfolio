@@ -305,7 +305,7 @@ footer .copyright {
     border-radius: 4px;
     padding: 12px 12px;
     margin-top: 10px;
-    width: 35em;
+    width: 65vw;
 }
 
 .newsletter button[type=submit] {
@@ -371,10 +371,6 @@ footer .copyright {
     align-items: center;
 }
 
-.cf > div{
-    display: flex;
-    flex-direction: column;
-}
 
 .cf .fsubject, .cf .fmsg {
     grid-column: 1 / 3;
@@ -497,8 +493,8 @@ footer .copyright {
     }
 
     .newsletter button[type=submit] {
-        top: -62px;
-        left: 11em;
+        top: -52px;
+        left: 70vw;
     }
 
     .newsletter {
