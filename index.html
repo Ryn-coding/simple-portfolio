@@ -9,7 +9,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.css">
     <link rel="stylesheet" href="test.css">
+
     <!-- <link rel="stylesheet" href="index.css"> -->
 
     <title>Aryan-Portfolio 1.0</title>
@@ -19,11 +21,11 @@
     <header>
         <nav>
             <div class="right">
-                Aryan's Portfolio
+                <a href="index.html">Aryan's Portfolio</a>
             </div>
             <div class="left">
                 <ul>
-                    <li><a class="nav-link" href="#">Home</a></li>
+                    <li><a class="nav-link" href="">Home</a></li>
                     <li><a class="nav-link" href="#about">About</a></li>
                     <li><a class="nav-link" href="#">Projects</a></li>
                     <li><a href="contact.html"><button>Contact me</button></a></li>
@@ -47,7 +49,7 @@
         <section class="first">
             <div class="fleft">
                 <h1>Hello, Myself <span class="meta">Aryan Vaghela.</span></h1>
-                <h2>I am a <span id="meta">Full stack Web Developer.</span></h2>
+                <h2>I am a <span id="meta"></span></h2>
             </div>
             <div class="rleft">
                 <img src="images/bg.png" alt="">
@@ -88,26 +90,30 @@
                     <li>
                         <h2>Quick Links</h2>
                     </li>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Services</a></li>
+                    <li><a class="footer-links" href="#">About Us</a></li>
+                    <li><a class="footer-links" href="#">Services</a></li>
                     <!-- <li><a href="#">Contact Me</a></li> -->
-                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a class="footer-links" href="#">Privacy Policy</a></li>
                 </ul>
             </div>
             <div class="visit">
                 <ul>
-                    <li><h2>Contact Us</h2></li>
+                    <li>
+                        <h2>Contact Us</h2>
+                    </li>
+                    <li><a class="footer-links" href="mailto:aryanvaghela53@gmail.com">aryanvaghela53@gmail.com</a></li>
+                    <li><a class="footer-links" href="tel:0123456789">0123456789</a></li>
                     <li><span>123, ABC Apartment,</span></li>
                     <li><span>Gujarat, India.</span></li>
-                    <li><a href="tel:0123456789">0123456789</a></li>
-                    <li><a href="mailto:aryanvaghela53@gmail.com">aryanvaghela53@gmail.com</a></li>
                 </ul>
             </div>
-            <div class="subscribe">
+            <div class="visit subscribe">
                 <form class="newsletter" action="">
                     <div>
-                        <label for="email">Subscribe our Newsletter</label>
-                        <input type="text" placeholder="Enter Your Email">
+                        <label for="email">
+                            <h2>Subscribe our Newsletter</h2>
+                        </label>
+                        <input type="email" placeholder="Enter Your Email">
                     </div>
                     <button type="submit" class="btn"><i class="ri-send-plane-fill"></i></button>
                 </form>
@@ -119,17 +125,16 @@
                 </div>
             </div>
         </div>
-        <div class="copyright">Copyright <i class="ri-copyright-line"></i> www.aryanporfolio.com</div>
+        <div class="copyright">Copyright <i class="ri-copyright-line"></i> Aryan Vaghela</div>
     </footer>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+        integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+        integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script> -->
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-    <script>
-        var typed = new Typed('#meta', {
-            strings: ['Full Stack Web Developer.', 'PHP Web Developer.', 'EC Engineer.'],
-            typeSpeed: 70,
-            loop: true
-        });
-    </script>
     <script src="index.js"></script>
 </body>
 
