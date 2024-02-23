@@ -281,9 +281,6 @@ footer .copyright {
     color: #bebebe;
 }
 
-.subscribe {
-    /* padding: 50px 50px; */
-}
 
 .newsletter {
     /* height: 50%; */
@@ -769,5 +766,3 @@ textarea {
 
 
 }
-
-@media (max-width:478px) {}
